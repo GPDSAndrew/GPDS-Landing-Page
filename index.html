@@ -11,6 +11,55 @@
     <title>GPDS - General Intelligence (GI)</title>
 
     <style>
+      .button-home {
+        background-color: #4DD0E1;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        margin: 5px;
+        position: relative;
+    }
+
+    .button-home:hover {
+        background-color: #007C91;
+    }
+
+    .button-disabled {
+        background-color: #7A7A7A;
+        color: #D3D3D3;
+        cursor: not-allowed;
+    }
+
+    /* Tooltip Styling */
+    .button-home[data-tooltip]:hover::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 5px;
+        border-radius: 4px;
+        white-space: nowrap;
+        font-size: 12px;
+        z-index: 1;
+        opacity: 1;
+        transition: opacity 0.3s;
+    }
+
+a:hover {
+    color: #007C91; /* Darker Blue for Hover Effect */
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #4DD0E1; /* Keep visited links the same color */
+}
 
         body {
 
@@ -191,11 +240,15 @@
  
 
     <nav>
+    <div style="text-align: center; margin-top: 30px;">
+        <!-- Functional Button -->
+        <a href="about.html" class="button-home">About Us</a>
 
-        <a href="about.html">About Us</a> | <a href="fractal-knowledge-bank.html">Fractal Knowledge Bank</a> | <a href="roadmap.html">Roadmap</a>
-
-    </nav>
-
+        <!-- Disabled Buttons with Tooltips -->
+        <a href="#" class="button-home button-disabled" data-tooltip="Coming Soon">Fractal Knowledge Bank</a>
+        <a href="#" class="button-home button-disabled" data-tooltip="Coming Soon">Roadmap</a>
+    </div>
+</nav>
  
 
     <div class="cta">
