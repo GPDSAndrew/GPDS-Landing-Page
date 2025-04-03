@@ -111,10 +111,14 @@
     <h2>📧 How to Stay Connected</h2>
     <p>Do you want to help us build something bigger? Enter your email to stay updated and join in opportunities to collaborate!</p>
  <div class="form-container">
-    <form action="success.html" method="GET">
-        <input type="email" name="email" placeholder="Enter your email" required class="styled-input">
-        <br>
-        <button type="submit" class="button-home">Stay Connected</button>
+     <form name="contact" method="POST" data-netlify="true" action="success.html">
+        <input type="hidden" name="form-name" value="contact">
+        
+        <div style="text-align: center;">
+            <input type="email" name="email" placeholder="Enter your email" required class="styled-input">
+            <br>
+            <button type="submit" class="button-home">Stay Connected</button>
+        </div>
     </form>
 </div>
 
