@@ -21,24 +21,47 @@
         color: #FFFFFF; /* Keep visited links the same color */
     }
 
-    /* Button Style */
-    .button-home {
-        background-color: #4DD0E1; /* Light Blue */
-        color: #022B3A; /* Dark Blue Text */
-        padding: 12px 25px;
-        border: none;
-        border-radius: 6px;
-        cursor: pointer;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        font-weight: bold;
-        transition: background-color 0.3s, transform 0.1s;
-    }
+ /* Style for the input field */
+.styled-input {
+    padding: 12px;
+    width: 70%;
+    max-width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #4DD0E1;
+    border-radius: 6px;
+    background-color: #022B3A;
+    color: #E0F7FA;
+    transition: border-color 0.3s, background-color 0.3s;
+}
 
-    .button-home:hover {
-        background-color: #007C91;
-        transform: scale(1.05);
+.styled-input:focus {
+    border-color: #007C91;
+    background-color: #0D3B66;
+    outline: none;
+}
+
+/* Style for the submit button - reuses button-home style */
+.button-home {
+    background-color: #4DD0E1;
+    color: #022B3A;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button-home:hover {
+    background-color: #007C91;
+    transform: scale(1.05);
+}
+
     }
 
     /* Disabled Buttons Style */
@@ -153,6 +176,27 @@
     <a href="index.html" class="button-home">Home</a>
 </div>
 
+        
+ <div class="cta">
+    <h2>📧 Join the Movement</h2>
+    <p>Do you want to help us build something bigger? Enter your email to stay updated and collaborate!</p>
+    <form action="https://tourmaline-kleicha-6e38d9.netlify.app/" method="POST" netlify>
+        <input type="email" name="email" placeholder="Enter your email" required class="styled-input">
+        <br>
+        <button type="submit" class="button-home">Stay Connected</button>
+    </form>
+</div>
+
+
+    </div>
+
+ 
+<p style="text-align: center;">
+    <div style="text-align: center; margin-top: 30px;">
+
+        <p>© 2025 GPDS.com All rights reserved. <a href="https://pc275.com/privacy-policy/">Privacy Policy</a></p>
+
+        <p><a href="contact.html">Contact Us</a></p>
       
     </div>
 </body>
