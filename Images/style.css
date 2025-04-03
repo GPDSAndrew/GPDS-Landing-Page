@@ -44,7 +44,19 @@ h1, h2 {
     display: block;
     margin: 0 auto; /* Centers the input field */
 }
-
+/* Textarea Styling */
+.styled-textarea {
+    padding: 12px;
+    width: 80%;
+    max-width: 500px;
+    margin-top: 10px;
+    border: 1px solid #4DD0E1;
+    border-radius: 8px;
+    background-color: #022B3A;
+    color: #E0F7FA;
+    font-family: Arial, sans-serif;
+    resize: vertical;
+}
 /* Styling the Stay Connected Button */
 .button-home, .cta button {
     background-color: #4DD0E1;
