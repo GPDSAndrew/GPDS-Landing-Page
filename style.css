@@ -62,6 +62,30 @@ h1, h2 {
 .button-home:hover, .cta button:hover {
     background-color: #007C91;
 }
+/* Image Container Styling */
+.image-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Image Styling */
+.image-container img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeInEffect 1.5s forwards;
+}
+
+@keyframes fadeInEffect {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
 
 
 .styled-input:focus {
