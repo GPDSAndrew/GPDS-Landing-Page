@@ -26,26 +26,46 @@
     a:visited {
         color: #FFFFFF; /* Keep visited links the same color */
     }
+/* Style for the input field */
+.styled-input {
+    padding: 12px;
+    width: 70%;
+    max-width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #4DD0E1;
+    border-radius: 6px;
+    background-color: #022B3A;
+    color: #E0F7FA;
+    transition: border-color 0.3s, background-color 0.3s;
+}
 
-    .button-home {
-        background-color: #4DD0E1;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        text-decoration: none;
-        transition: background-color 0.3s, transform 0.1s;
-        margin: 5px;
-        position: relative;
-        font-size: 16px;
-        font-weight: bold;
-    }
+.styled-input:focus {
+    border-color: #007C91;
+    background-color: #0D3B66;
+    outline: none;
+}
 
-    .button-home:hover {
-        background-color: #007C91;
-        transform: scale(1.05);
-    }
+/* Style for the submit button - reuses button-home style */
+.button-home {
+    background-color: #4DD0E1;
+    color: #022B3A;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button-home:hover {
+    background-color: #007C91;
+    transform: scale(1.05);
+}
 
     .button-disabled {
         background-color: #7A7A7A;
@@ -184,17 +204,15 @@
 
  
 
-    <div class="cta">
-
-        <h2>📧 Join the Movement</h2>
-
-        <p>Do you want to help us build something bigger? Enter your email to stay updated and collaborate!</p>
-
-       <form action="https://formspree.io/f/your_form_id" method="POST">
-    <input type="email" name="email" placeholder="Enter your email" required style="padding: 12px; width: 70%; border: 1px solid #4DD0E1; border-radius: 4px; background-color: #022B3A; color: #E0F7FA; margin-top: 10px;">
-    <br>
-    <button type="submit" class="button-home">Stay Connected</button>
-</form>
+ <div class="cta">
+    <h2>📧 Join the Movement</h2>
+    <p>Do you want to help us build something bigger? Enter your email to stay updated and collaborate!</p>
+    <form action="https://tourmaline-kleicha-6e38d9.netlify.app/" method="POST" netlify>
+        <input type="email" name="email" placeholder="Enter your email" required class="styled-input">
+        <br>
+        <button type="submit" class="button-home">Stay Connected</button>
+    </form>
+</div>
 
 
     </div>
