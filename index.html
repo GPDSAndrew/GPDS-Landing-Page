@@ -111,12 +111,25 @@
     <h2>📧 How to Stay Connected</h2>
     <p>Do you want to help us build something bigger? Enter your email to stay updated and join in opportunities to collaborate!</p>
  <div class="form-container">
-     <form name="contact" method="POST" data-netlify="true" action="success.html">
+  <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="success.html">
         <input type="hidden" name="form-name" value="contact">
         
+        <!-- Hidden Field for Netlify Spam Filtering -->
+        <div style="display: none;">
+            <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+        </div>
+        
         <div style="text-align: center;">
-            <input type="email" name="email" placeholder="Enter your email" required class="styled-input">
-            <br>
+            <!-- Name Field -->
+            <input type="text" name="name" placeholder="Enter your name" required class="styled-input"><br>
+
+            <!-- Email Field -->
+            <input type="email" name="email" placeholder="Enter your email" required class="styled-input"><br>
+            
+            <!-- Comment/Message Field -->
+            <textarea name="message" placeholder="Your comments or questions..." rows="4" class="styled-textarea"></textarea><br>
+
+            <!-- Submit Button -->
             <button type="submit" class="button-home">Stay Connected</button>
         </div>
     </form>
