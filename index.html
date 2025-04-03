@@ -11,7 +11,24 @@
     <title>GPDS - General Intelligence (GI)</title>
 
     <style>
-      .button-home {
+        
+    /* Universal link styling */
+    a {
+        color: #4DD0E1; /* Matches your button color */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    a:hover {
+        color: #007C91; /* Darker Blue for Hover Effect */
+        text-decoration: underline;
+    }
+
+    a:visited {
+        color: #4DD0E1; /* Keep visited links the same color */
+    }
+
+    .button-home {
         background-color: #4DD0E1;
         color: white;
         padding: 10px 20px;
@@ -34,7 +51,6 @@
         cursor: not-allowed;
     }
 
-    /* Tooltip Styling */
     .button-home[data-tooltip]:hover::after {
         content: attr(data-tooltip);
         position: absolute;
@@ -51,15 +67,6 @@
         opacity: 1;
         transition: opacity 0.3s;
     }
-
-a:hover {
-    color: #007C91; /* Darker Blue for Hover Effect */
-    text-decoration: underline;
-}
-
-a:visited {
-    color: #4DD0E1; /* Keep visited links the same color */
-}
 
         body {
 
