@@ -10,8 +10,7 @@
 
     <title>GPDS - General Intelligence (GI)</title>
 
-    <style>
-        
+<style>
     /* Universal link styling */
     a {
         color: #4DD0E1; /* Matches your button color */
@@ -36,13 +35,16 @@
         border-radius: 5px;
         cursor: pointer;
         text-decoration: none;
-        transition: background-color 0.3s;
+        transition: background-color 0.3s, transform 0.1s;
         margin: 5px;
         position: relative;
+        font-size: 16px;
+        font-weight: bold;
     }
 
     .button-home:hover {
         background-color: #007C91;
+        transform: scale(1.05);
     }
 
     .button-disabled {
@@ -68,127 +70,50 @@
         transition: opacity 0.3s;
     }
 
-        body {
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #0A2A42;
+        color: #E0F7FA;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 30px;
+        background-color: #0D3B66;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+    h1, h2 {
+        color: #4DD0E1;
+        text-align: center;
+    }
+    p, li {
+        line-height: 1.8;
+        margin-bottom: 15px;
+    }
+    .timeline {
+        margin-top: 30px;
+    }
+    .timeline-event {
+        position: relative;
+        margin: 30px 0;
+        padding-left: 20px;
+        border-left: 2px solid #4DD0E1;
+    }
+    .timeline-event::before {
+        content: '';
+        position: absolute;
+        left: -8px;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        background-color: #4DD0E1;
+        border-radius: 50%;
+    }
+</style>
 
-            font-family: Arial, sans-serif;
-
-            background-color: #0A2A42;
-
-            color: #E0F7FA;
-
-            margin: 0;
-
-            padding: 0;
-
-        }
-
-        .container {
-
-            max-width: 900px;
-
-            margin: 20px auto;
-
-            padding: 30px;
-
-            background-color: #0D3B66;
-
-            border-radius: 12px;
-
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-
-        }
-
-        h1, h2 {
-
-            color: #4DD0E1;
-
-            text-align: center;
-
-        }
-
-        .cta {
-
-            text-align: center;
-
-            margin-top: 20px;
-
-        }
-
-        .cta input {
-
-            padding: 12px;
-
-            width: 70%;
-
-            border: 1px solid #4DD0E1;
-
-            border-radius: 4px;
-
-            background-color: #022B3A;
-
-            color: #E0F7FA;
-
-        }
-
-        .cta button {
-
-            padding: 12px 25px;
-
-            margin-top: 10px;
-
-            background-color: #4DD0E1;
-
-            color: #022B3A;
-
-            border: none;
-
-            border-radius: 4px;
-
-            cursor: pointer;
-
-            transition: background-color 0.3s;
-
-        }
-
-        .cta button:hover {
-
-            background-color: #007C91;
-
-        }
-
-        p, li {
-
-            line-height: 1.8;
-
-            margin-bottom: 15px;
-
-        }
-
-        nav {
-
-            text-align: center;
-
-            margin-top: 30px;
-
-        }
-
-        nav a {
-
-            margin: 0 10px;
-
-            color: #4DD0E1;
-
-            text-decoration: none;
-
-        }
-
-        nav a:hover {
-
-            text-decoration: underline;
-
-        }
-
-    </style>
 
 </head>
 
@@ -246,16 +171,17 @@
 
  
 
-    <nav>
+<nav>
     <div style="text-align: center; margin-top: 30px;">
         <!-- Functional Button -->
         <a href="about.html" class="button-home">About Us</a>
-
+        
         <!-- Disabled Buttons with Tooltips -->
         <a href="#" class="button-home button-disabled" data-tooltip="Coming Soon">Fractal Knowledge Bank</a>
         <a href="#" class="button-home button-disabled" data-tooltip="Coming Soon">Roadmap</a>
     </div>
 </nav>
+
  
 
     <div class="cta">
