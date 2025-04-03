@@ -31,10 +31,10 @@ h1, h2 {
     text-align: center;
 }
 
-/* Styling the button */
-.button-home {
+/* Styling the Stay Connected Button */
+.button-home, .cta button {
     background-color: #4DD0E1;
-    color: #022B3A;
+    color: #FFFFFF; /* Ensuring the text is white */
     padding: 12px 25px;
     border: none;
     border-radius: 6px;
@@ -43,23 +43,21 @@ h1, h2 {
     font-weight: bold;
 }
 
-.button-home:hover {
+.button-home:hover, .cta button:hover {
     background-color: #007C91;
-     transform: scale(1.05);
 }
 
-/* Input Styling */
+
+/* Styling the input field */
 .styled-input {
     padding: 12px;
-    width: 70%;
-    max-width: 400px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 400px; /* Increase width to make it more prominent */
     border: 1px solid #4DD0E1;
     border-radius: 6px;
+    margin-bottom: 10px;
     background-color: #022B3A;
     color: #E0F7FA;
-    transition: border-color 0.3s, background-color 0.3s;
+    font-size: 16px; /* Slightly larger text */
 }
 
 .styled-input:focus {
