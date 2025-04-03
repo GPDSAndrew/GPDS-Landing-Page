@@ -1,0 +1,111 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0A2A42;
+    color: #E0F7FA;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #0D3B66;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading Colors */
+h1, h2 {
+    color: #4DD0E1;
+    text-align: center;
+}
+
+/* Button Styling */
+.button-home {
+    background-color: #4DD0E1;
+    color: #022B3A;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button-home:hover {
+    background-color: #007C91;
+    transform: scale(1.05);
+}
+
+/* Input Styling */
+.styled-input {
+    padding: 12px;
+    width: 70%;
+    max-width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #4DD0E1;
+    border-radius: 6px;
+    background-color: #022B3A;
+    color: #E0F7FA;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.styled-input:focus {
+    border-color: #007C91;
+    background-color: #0D3B66;
+    outline: none;
+}
+
+/* Link Styling */
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #007C91;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #FFFFFF;
+}
+
+/* Tooltip Styling */
+.button-disabled {
+    background-color: #7A7A7A;
+    color: #D3D3D3;
+    cursor: not-allowed;
+}
+
+/* Timeline Styling */
+.timeline {
+    margin-top: 30px;
+}
+
+.timeline-event {
+    position: relative;
+    margin: 30px 0;
+    padding-left: 20px;
+    border-left: 2px solid #4DD0E1;
+}
+
+.timeline-event::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background-color: #4DD0E1;
+    border-radius: 50%;
+}
