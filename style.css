@@ -31,25 +31,21 @@ h1, h2 {
     text-align: center;
 }
 
-/* Button Styling */
+/* Styling the button */
 .button-home {
     background-color: #4DD0E1;
     color: #022B3A;
     padding: 12px 25px;
-    margin-top: 20px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.1s;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    transition: background-color 0.3s;
     font-weight: bold;
 }
 
 .button-home:hover {
     background-color: #007C91;
-    transform: scale(1.05);
+     transform: scale(1.05);
 }
 
 /* Input Styling */
