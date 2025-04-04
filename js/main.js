@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 return gsap.from(data.next.container, {
                     opacity: 0,
                     duration: 0.5,
-                    delay: 0.3 // Add a slight delay for smoothness
+                    delay: 0.6 // Add a slight delay for smoothness
                 });
             }
         }]
