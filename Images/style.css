@@ -155,15 +155,14 @@ a:visited {
 /* Fractal Background Styling */
 @keyframes fractalZoom {
     0% { background-size: 100%; }
-    100% { background-size: 200%; }
+    100% { background-size: 150%; }
 }
 
 body.index-background {
-    background-image: url('images/fractal-image.png'); 
-    background-size: cover; /* Cover ensures the image takes the whole screen */
+    background-image: url('../images/fractal-image.png'); /* Ensure the path is correct */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     animation: fractalZoom 60s infinite linear;
-    overflow: hidden;
 }
 
