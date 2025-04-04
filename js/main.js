@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 return gsap.to(data.current.container, { opacity: 0, duration: 0.6 });
             },
             enter(data) {
-                window.scrollTo(0, 0);
+                window.scrollTo(0, 0); // This line is good for starting fresh, but we need more.
                 return gsap.from(data.next.container, { opacity: 0, duration: 0.6 });
             }
         }],
@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 namespace: 'index',
                 beforeEnter(data) {
                     document.body.classList.add('index-background');
+                    document.body.style.overflow = 'auto'; // Allow scrolling
                 },
                 beforeLeave(data) {
                     document.body.classList.remove('index-background');
@@ -24,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 namespace: 'about',
                 beforeEnter(data) {
                     document.body.classList.add('index-background');
+                    document.body.style.overflow = 'auto'; // Allow scrolling
                 },
                 beforeLeave(data) {
                     document.body.classList.remove('index-background');
