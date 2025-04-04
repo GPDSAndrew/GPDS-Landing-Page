@@ -14,18 +14,12 @@ document.addEventListener("DOMContentLoaded", function() {
             namespace: 'index',
             afterEnter() {
                 document.body.classList.add('index-background');
-            },
-            beforeLeave() {
-                document.body.classList.remove('index-background');
             }
         },
         {
             namespace: 'about',
             afterEnter() {
                 document.body.classList.add('index-background');
-            },
-            beforeLeave() {
-                document.body.classList.remove('index-background');
             }
         }]
     });
