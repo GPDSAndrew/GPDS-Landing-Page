@@ -159,7 +159,7 @@ a:visited {
 }
 
 body.index-background {
-    background-image: url('../images/fractal-image.png'); /* Ensure the path is correct */
+    background-image: url('fractal-image.png'); /* CORRECTED PATH */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
