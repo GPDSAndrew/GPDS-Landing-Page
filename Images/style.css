@@ -152,3 +152,16 @@ a:visited {
     background-color: #4DD0E1;
     border-radius: 50%;
 }
+/* Fractal Background Styling */
+@keyframes fractalZoom {
+    0% { background-size: 100%; }
+    100% { background-size: 200%; }
+}
+
+.fractal-background {
+    background-image: url('images/your-fractal-image.png'); /* Replace with your fractal image path */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: fractalZoom 30s infinite linear; /* Slow zoom effect */
+}
