@@ -11,10 +11,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 });
             },
             enter(data) {
-                window.scrollTo(0, 0);  // Force scroll to the top when loading new page
+                window.scrollTo(0, 0);  // Ensure we start at the top
                 return gsap.from(data.next.container, {
                     opacity: 0,
-                    duration: 0.5
+                    duration: 0.5,
+                    delay: 0.3 // Add a slight delay for smoothness
                 });
             }
         }]
