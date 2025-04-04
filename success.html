@@ -3,14 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Submission Successful</title>
-    <link rel="stylesheet" href="images/style.css">
+    <title>Success - GPDS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0A2A42;
+            color: #E0F7FA;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #0D3B66;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        h1 {
+            color: #4DD0E1;
+        }
+        p {
+            line-height: 1.8;
+        }
+        .button-home {
+            background-color: #4DD0E1;
+            color: #022B3A;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .button-home:hover {
+            background-color: #007C91;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Thank You!</h1>
-        <p>Your submission has been successfully received.</p>
-        <a href="index.html" class="button-home">Back to Home</a>
+        <h1>Thank You for Connecting!</h1>
+        <p>We've received your message and will be in touch soon. 🚀</p>
+        <p>Feel free to continue exploring the site and building your GI journey. We plan to add more resources, guides and videos to explain in detail as we go on.  </p>
+        
+        <!-- Navigation Buttons -->
+        <div>
+            <a href="index.html" class="button-home">Back to Home</a>
+            <a href="about.html" class="button-home">About Us</a>
+            <a href="fractal-knowledge-bank.html" class="button-home button-disabled" data-tooltip="Coming Soon">Fractal Knowledge Bank</a>
+            <a href="roadmap.html" class="button-home button-disabled" data-tooltip="Coming Soon">Roadmap</a>
+        </div>
     </div>
 </body>
 </html>
