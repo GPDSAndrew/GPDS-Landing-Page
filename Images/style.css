@@ -161,13 +161,12 @@ a:visited {
     0% { background-size: 100%; }
     100% { background-size: 150%; }
 }
-
+/* Fullscreen Fractal Background Styling */
 body.index-background {
-    background-image: url('Images/fractal-image.png'); /* Make sure the path is correct */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    animation: fractalZoom 60s infinite linear;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    background-image: url('Images/fractal-image.png'); /* Ensure the path is correct */
+    background-size: cover; /* Ensures the image scales to fill the screen */
+    background-position: center; /* Keeps the focal point centered */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Keeps the image static during scroll */
 }
 
