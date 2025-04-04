@@ -159,9 +159,10 @@ a:visited {
 }
 
 .fractal-background {
-    background-image: url('images/your-fractal-image.png'); /* Replace with your fractal image path */
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-image: url('images/fractal-image.png'); /* Replace with your image path */
+    background-size: cover;
     background-position: center;
-    animation: fractalZoom 30s infinite linear; /* Slow zoom effect */
+    animation: fractalZoom 20s infinite linear;
+    overflow: hidden;
 }
+
