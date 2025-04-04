@@ -90,7 +90,7 @@ h1, h2 {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Fade-in Animation */
+/* Fade-in Effect */
 .fade-in {
     opacity: 0;
     animation: fadeInEffect 1.5s forwards;
@@ -158,11 +158,12 @@ a:visited {
     100% { background-size: 200%; }
 }
 
-.fractal-background {
-    background-image: url('images/fractal-image.png'); /* Replace with your image path */
-    background-size: cover;
+body.index-background {
+    background-image: url('images/fractal-image.png'); 
+    background-size: cover; /* Cover ensures the image takes the whole screen */
     background-position: center;
-    animation: fractalZoom 20s infinite linear;
+    background-repeat: no-repeat;
+    animation: fractalZoom 60s infinite linear;
     overflow: hidden;
 }
 
