@@ -9,13 +9,17 @@ body {
 
 /* Container Styling */
 .container {
+    position: relative;
     max-width: 900px;
     margin: 20px auto;
     padding: 30px;
-    background-color: #0D3B66;
+    background-color: rgba(13, 59, 102, 0.9); /* Adding slight transparency to reveal fractal background */
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
+
+
+
 /* Form Container Styling */
 .form-container {
     display: flex;
@@ -159,10 +163,11 @@ a:visited {
 }
 
 body.index-background {
-    background-image: url('fractal-image.png'); /* CORRECTED PATH */
+    background-image: url('Images/fractal-image.png'); /* Make sure the path is correct */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     animation: fractalZoom 60s infinite linear;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
