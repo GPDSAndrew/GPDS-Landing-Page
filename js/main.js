@@ -7,29 +7,26 @@ document.addEventListener("DOMContentLoaded", function() {
             },
             enter(data) {
                 window.scrollTo(0, 0);
-                document.body.style.overflow = 'auto';
                 return gsap.from(data.next.container, { opacity: 0, duration: 0.6 });
             }
         }],
-        views: [
-            {
-                namespace: 'index',
-                beforeEnter(data) {
-                    document.body.classList.add('index-background');
-                },
-                beforeLeave(data) {
-                    document.body.classList.remove('index-background');
-                }
+        views: [{
+            namespace: 'index',
+            afterEnter() {
+                document.body.classList.add('index-background');
             },
-            {
-                namespace: 'about',
-                beforeEnter(data) {
-                    document.body.classList.add('index-background');
-                },
-                beforeLeave(data) {
-                    document.body.classList.remove('index-background');
-                }
+            beforeLeave() {
+                document.body.classList.remove('index-background');
             }
-        ]
+        },
+        {
+            namespace: 'about',
+            afterEnter() {
+                document.body.classList.add('index-background');
+            },
+            beforeLeave() {
+                document.body.classList.remove('index-background');
+            }
+        }]
     });
 });
